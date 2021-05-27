@@ -1,8 +1,7 @@
 """
 """
 from __future__ import annotations
-from collections import Callable
-from typing import Optional, Any
+from typing import Optional, Any, Callable
 
 from CQRS.types.interface import Interface
 

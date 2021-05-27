@@ -21,6 +21,10 @@ class Message:
     ):
         self.payload = payload
         self.headers = self.build_headers(headers or {})
+        self.validate_payload()
+
+    def validate_payload(self):
+        pass
 
     def build_headers(self, base_headers: Dict[str, Any]) -> Dict[str, Any]:
         headers = copy(base_headers)
